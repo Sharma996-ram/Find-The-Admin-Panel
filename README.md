@@ -20,11 +20,11 @@ This tool is designed to help find the admin panel of websites by scanning for k
 3. If the script is not already on your system, download it using `curl` or `wget`:
    - Using `wget`:
      ```bash
-     wget https://link-to-your-script.py
+     wget https://github.com/DV64/Finder-The-Admin-Panel.py
      ```
    - Using `curl`:
      ```bash
-     curl -O https://link-to-your-script.py
+     curl -O https://github.com/DV64/Finder-The-Admin-Panel.py
      ```
 4. Navigate to the directory where the script is located:
    ```bash
@@ -43,11 +43,11 @@ This tool is designed to help find the admin panel of websites by scanning for k
 2. If the script is not on your system, download it using `wget` or `curl`:
    - Using `wget`:
      ```bash
-     wget https://link-to-your-script.py
+     wget https://github.com/DV64/Finder-The-Admin-Panel.py
      ```
    - Using `curl`:
      ```bash
-     curl -O https://link-to-your-script.py
+     curl -O https://github.com/DV64/Finder-The-Admin-Panel.py
      ```
 3. Navigate to the directory where the script is located:
    ```bash
@@ -70,7 +70,7 @@ This tool is designed to help find the admin panel of websites by scanning for k
 2. Download the script using `wget` or any method you prefer:
    - Using `wget`:
      ```bash
-     wget https://link-to-your-script.py
+     wget https://github.com/DV64/Finder-The-Admin-Panel.py
      ```
 3. Run the script:
    ```bash
