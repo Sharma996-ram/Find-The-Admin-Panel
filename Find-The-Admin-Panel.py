@@ -17,7 +17,7 @@ console = Console()
 
 # بيانات المطور
 developer_name = "DV64"
-tool_name = "Admin Panel Finder"
+tool_name = "Find The Admin Panel"
 version = "2.0"
 github_link = "https://github.com/DV64"
 
@@ -132,7 +132,7 @@ def main():
         sub_links = load_sub_links()
 
         # شرح الخيارات
-        parser = argparse.ArgumentParser(description="Admin Panel Finder Tool")
+        parser = argparse.ArgumentParser(description="Find The Admin Panel")
         parser.add_argument("--protocol", default="http", help="Protocol to use (http or https).")
         parser.add_argument("--timeout", type=int, default=10, help="Timeout for requests in seconds.")
         parser.add_argument("--threads", type=int, default=10, help="Number of threads to use for scanning.")
@@ -161,7 +161,7 @@ def main():
         # سؤال إذا كنت ترغب في تكرار العملية
         repeat = input("\nDo you want to scan another URL? (yes/no): ").strip().lower()
         if repeat != 'yes':
-            console.print("\nThank you for using the Admin Panel Finder tool!", style="bold green")
+            console.print("\nThank you for using the Find The Admin Panel!", style="bold green")
             break  # Exit the loop if the user doesn't want to scan again
 
 if __name__ == "__main__":
