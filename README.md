@@ -1,93 +1,148 @@
+# Find-The-Admin-Panel
 
-# Finder The Admin Panel 
+## Description
 
-This tool is designed to help find the admin panel of websites by scanning for known subdirectories. It automatically checks a list of predefined subdirectories to identify the admin panel location.
+**Find-The-Admin-Panel** is a Python tool designed to identify potential admin panel URLs for websites. The tool checks common admin panel paths and returns the results, helping security researchers and developers find potential vulnerabilities in websites. This tool is essential for identifying web applications' admin login interfaces, which are typically hidden from the public.
 
 ## Features
-- Scans websites to find possible admin panel links.
-- Displays working admin panel URLs from a list of known subdirectories.
-- Simple and easy-to-use interface.
 
-## Requirements
-- Python 2.7 or higher.
-- Access to the terminal on your system.
+- Scan websites for common admin panel paths.
+- Display results for found and missing admin panels.
+- Customizable input for website URLs.
+- Handles both sub-links and full admin panel URLs.
+- Shows the number of successful and failed attempts.
+
+---
 
 ## Installation
 
-### Windows
-1. Install Python (if not already installed) from [here](https://www.python.org/downloads/).
-2. Open Command Prompt (`cmd`).
-3. If the script is not already on your system, download it using `curl` or `wget`:
-   - Using `wget`:
-     ```bash
-     wget https://github.com/DV64/Finder-The-Admin-Panel.py
-     ```
-   - Using `curl`:
-     ```bash
-     curl -O https://github.com/DV64/Finder-The-Admin-Panel.py
-     ```
-4. Navigate to the directory where the script is located:
+### Prerequisites
+
+Ensure Python 3.x is installed on your system. Follow the specific installation steps for your operating system.
+
+---
+
+### Installing on Windows
+
+1. **Download Python**:  
+   - Download Python 3.x from [python.org](https://www.python.org/downloads/).  
+   - During installation, check the box **"Add Python to PATH"**.
+
+2. **Clone the Repository**:  
+   Open the Command Prompt and run:
    ```bash
-   cd path\to\your\script
-   ```
-5. Run the script using Python:
-   ```bash
-   python Finder_The_Admin_Panel.py
+   git clone https://github.com/DV64/Find-The-Admin-Panel.git
+   cd Find-The-Admin-Panel
    ```
 
-### Linux
-1. Ensure Python is installed on your system. If not, install it using:
+3. **Install Required Libraries**:
    ```bash
-   sudo apt install python
-   ```
-2. If the script is not on your system, download it using `wget` or `curl`:
-   - Using `wget`:
-     ```bash
-     wget https://github.com/DV64/Finder-The-Admin-Panel.py
-     ```
-   - Using `curl`:
-     ```bash
-     curl -O https://github.com/DV64/Finder-The-Admin-Panel.py
-     ```
-3. Navigate to the directory where the script is located:
-   ```bash
-   cd /path/to/your/script
-   ```
-4. Make the script executable:
-   ```bash
-   chmod +x Finder_The_Admin_Panel.py
-   ```
-5. Run the script:
-   ```bash
-   ./Finder_The_Admin_Panel.py
+   pip install -r requirements.txt
    ```
 
-### Android (Using Termux)
-1. Install Python in Termux:
+4. **Run the Tool**:  
    ```bash
-   pkg install python
-   ```
-2. Download the script using `wget` or any method you prefer:
-   - Using `wget`:
-     ```bash
-     wget https://github.com/DV64/Finder-The-Admin-Panel.py
-     ```
-3. Run the script:
-   ```bash
-   python Finder_The_Admin_Panel.py
+   python Finder.py
    ```
 
-## How to Use
-1. Ensure the `link.txt` file is present in the same directory as the script. This file should contain a list of known subdirectories (one per line).
-2. When prompted, enter the website URL (e.g., `example.com` or `www.example.com`).
-3. The script will check various subdirectories and output the links to the console if they are accessible.
+---
+
+### Installing on Linux
+
+1. **Install Python**:  
+   Most Linux distributions come with Python pre-installed. Verify using:
+   ```bash
+   python3 --version
+   ```
+   If Python is not installed, use the package manager to install it:
+   ```bash
+   sudo apt update
+   sudo apt install python3 python3-pip git
+   ```
+
+2. **Clone the Repository**:  
+   Open a terminal and run:
+   ```bash
+   git clone https://github.com/DV64/Find-The-Admin-Panel.git
+   cd Find-The-Admin-Panel
+   ```
+
+3. **Install Required Libraries**:
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+
+4. **Run the Tool**:
+   ```bash
+   python3 Finder.py
+   ```
+
+---
+
+### Installing on Android (Using Termux)
+
+1. **Install Termux**:  
+   Download Termux from [F-Droid](https://f-droid.org/) or the Google Play Store.
+
+2. **Install Python**:  
+   Open Termux and run:
+   ```bash
+   pkg update
+   pkg install python git
+   ```
+
+3. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/DV64/Find-The-Admin-Panel.git
+   cd Find-The-Admin-Panel
+   ```
+
+4. **Install Required Libraries**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Run the Tool**:
+   ```bash
+   python Finder.py
+   ```
+
+---
+
+## Usage
+
+1. Run the tool:
+   ```bash
+   python Finder.py
+   ```
+
+2. Enter the base URL of the website when prompted (e.g., `example.com`).
+3. If sub-links are available, the script will automatically check them. If not, it will prompt you to add sub-links.
+4. The tool will scan the website for potential admin panel URLs.
+5. Results are displayed in the terminal, showing the status of each admin panel path.
 
 ## Example
-```
-Enter Site Name 
-(ex : example.com or www.example.com ): example.com
 
-Available links:
-Link =>  http://example.com/admin
-Link =>  http://example.com/wp-admin
 ```
+[Find-The-Admin-Panel v2.0 by DV64]
+Enter the base URL of the website (without protocol, e.g., example.com): example.com
+Scanning /admin... Found
+Scanning /login... Not Found
+...
+```
+
+At the end of the scan, a summary will show:
+- The total number of links scanned.
+- The number of successful admin panels found.
+- The number of failed attempts.
+
+---
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
