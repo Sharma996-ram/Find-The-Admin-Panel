@@ -121,16 +121,6 @@ Ensure Python 3.x is installed on your system. Follow the specific installation 
 4. The tool will scan the website for potential admin panel URLs.
 5. Results are displayed in the terminal, showing the status of each admin panel path.
 
-## Example
-
-```
-[Find-The-Admin-Panel v2.0 by DV64]
-Enter the base URL of the website (without protocol, e.g., example.com): example.com
-Scanning /admin... Found
-Scanning /login... Not Found
-...
-```
-
 At the end of the scan, a summary will show:
 - The total number of links scanned.
 - The number of successful admin panels found.
