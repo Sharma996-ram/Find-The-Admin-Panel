@@ -18,14 +18,14 @@
 
 ### Prerequisites
 
-Ensure Python 3.x is installed on your system. Follow the specific installation steps for your operating system.
+Ensure Python 3.7+ is installed on your system. Follow the specific installation steps for your operating system.
 
 ---
 
 ### Installing on Windows
 
 1. **Download Python**:  
-   - Download Python 3.x from [python.org](https://www.python.org/downloads/).  
+   - Download Python 3.7+ from [python.org](https://www.python.org/downloads/).  
    - During installation, check the box **"Add Python to PATH"**.
 
 2. **Clone the Repository**:  
