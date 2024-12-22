@@ -32,8 +32,8 @@ init(autoreset=True)
 class Config:
     VERSION: str = "3.0"
     DEVELOPER: str = "DV64"
-    GITHUB: str = "https://github.com/dv64"
-    TOOL_NAME: str = "Advanced Web Scanner"
+    GITHUB: str = "https://github.com/dreamlifewellness.in''
+    TOOL_NAME: str = "dreamlifewellness.in''
     RELEASE_DATE: str = "2024"
     CACHE_TTL: int = 3600
     CACHE_SIZE: int = 1000
